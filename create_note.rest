@@ -1,0 +1,22 @@
+post http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+    "content": "VS Code Rest client",
+    "important": true
+}
+
+###
+get http://localhost:3001/api/notes
+
+###
+put http://localhost:3001/api/notes/607511c3b5967d3fd0d6e5bc
+Content-Type: application/json
+
+{
+    "content": "Postman test updated via CS Code Rest client",
+    "important": false
+}
+
+###
+delete http://localhost:3001/api/notes/607511d6b5967d3fd0d6e5bd
